@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*  signup */
+
+.signup {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: #f4f5fc;
+
+    .group {
+        position: absolute;
+        width: 665px;
+        height: 481px;
+        left: 68px;
+        top: 60px;
+        background: #ffffff;
+
+        .bitmap {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: end;
+            width: 137px;
+            height: 480px;
+            background-color: #5a61ed;
+
+            .sing_up {
+                width: 63px;
+                height: 162px;
+                margin-bottom: 21.98px;
+                margin-right: 5.7px;
+
+                .sing_up_h2 {
+                    font-family: "PT Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 49px;
+                    line-height: 63px;
+                    letter-spacing: 0.5px;
+                    writing-mode: vertical-rl;
+                    transform: scale(-1);
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .noun {
+            position: absolute;
+            width: 527.8px;
+            height: 480px;
+            left: 137.2px;
+            top: 0.48px;
+
+            .noun_h3 {
+                font-family: "Work Sans", sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: -0.46px;
+                color: #111111;
+                margin-left: 20.8px;
+                margin-top: 38.52px;
+            }
+            .noun_p {
+                font-family: "Work Sans", sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+                color: #111111;
+                margin-left: 20.8px;
+            }
+
+            .noun_container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 42px 42px 43px 42px;
+            }
+        }
+    }
+}
