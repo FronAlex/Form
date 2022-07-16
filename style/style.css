@@ -156,6 +156,12 @@ h6 {
   height: 480px;
   left: 137.2px;
   top: 0.48px;
+  background-image: url(../img/noun_925550.svg);
+  background-size: 350px 350px;
+  background-repeat: no-repeat;
+  background-position-x: 201px;
+  background-position-y: 130px;
+  z-index: 0;
 }
 
 .signup .group .noun .noun_h3 {
@@ -185,5 +191,151 @@ h6 {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 42px 42px 43px 42px;
       grid-template-rows: 42px 42px 43px 42px;
+  margin: 20px 0 0 20px;
+  grid-row-gap: 16px;
+}
+
+.signup .group .noun .noun_container .noun_label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7c7c7c;
+}
+
+.signup .group .noun .noun_container .noun_label .number {
+  width: 52px;
+  height: 23px;
+  margin-top: 8px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.signup .group .noun .noun_container .noun_label .month {
+  width: 91px;
+  height: 23px;
+  margin: 8px 0 0 9px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.signup .group .noun .noun_container .noun_label .year {
+  width: 65px;
+  height: 23px;
+  margin: 8px 0 0 9px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.signup .group .noun .noun_container .noun_label .Male_label {
+  /*  vertical-align: text-bottom;
+                        margin-top: 12px; */
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+}
+
+.signup .group .noun .noun_container .noun_label .Female_label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  margin-left: 19px;
+}
+
+.signup .group .noun .noun_container .noun_label .input_check {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.signup .group .noun .noun_container .noun_label .radio {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 0.7px solid #5a61ed;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-top: 14px;
+}
+
+.signup .group .noun .noun_container .noun_label .radio::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #5a61ed;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.signup .group .noun .noun_container .noun_label .input_check:checked + .radio::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.signup .group .noun .noun_container .noun_input {
+  width: 234px;
+  height: 23px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.signup .group .noun .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  margin: 104px 0 0 0;
+}
+
+.signup .group .noun .account .account_p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 200;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.signup .group .noun .account .account_p .account_a {
+  color: #5a61ed;
+  text-decoration: underline;
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.signup .group .noun .account .account_button {
+  width: 154px;
+  height: 32px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #5a61ed;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  margin-right: 22px;
 }
 /*# sourceMappingURL=style.css.map */
