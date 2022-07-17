@@ -103,6 +103,20 @@ h6 {
   background: #f4f5fc;
 }
 
+@media screen and (max-width: 810px) {
+  .signup {
+    height: 779px;
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup {
+    height: 720px;
+    width: 310px;
+  }
+}
+
 .signup .group {
   position: absolute;
   width: 665px;
@@ -110,6 +124,23 @@ h6 {
   left: 68px;
   top: 60px;
   background: #ffffff;
+}
+
+@media screen and (max-width: 810px) {
+  .signup .group {
+    height: 700px;
+    width: 440px;
+    left: 40px;
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group {
+    left: 10px;
+    top: 10px;
+    width: 290px;
+  }
 }
 
 .signup .group .bitmap {
@@ -128,11 +159,32 @@ h6 {
   background-color: #5a61ed;
 }
 
+@media screen and (max-width: 810px) {
+  .signup .group .bitmap {
+    height: 700px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .bitmap {
+    width: 44px;
+  }
+}
+
 .signup .group .bitmap .sing_up {
   width: 63px;
   height: 162px;
   margin-bottom: 21.98px;
   margin-right: 5.7px;
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .bitmap .sing_up {
+    height: 108px;
+    width: 57px;
+    margin-right: 0;
+  }
 }
 
 .signup .group .bitmap .sing_up .sing_up_h2 {
@@ -150,6 +202,12 @@ h6 {
   color: #ffffff;
 }
 
+@media screen and (max-width: 530px) {
+  .signup .group .bitmap .sing_up .sing_up_h2 {
+    font-size: 32px;
+  }
+}
+
 .signup .group .noun {
   position: absolute;
   width: 527.8px;
@@ -164,6 +222,24 @@ h6 {
   z-index: 0;
 }
 
+@media screen and (max-width: 810px) {
+  .signup .group .noun {
+    height: 700px;
+    width: 360px;
+    left: 80px;
+    background-position-x: 53px;
+    background-position-y: 349px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .noun {
+    left: 44px;
+    width: 224px;
+    background-position-x: -95px;
+  }
+}
+
 .signup .group .noun .noun_h3 {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
@@ -173,6 +249,13 @@ h6 {
   color: #111111;
   margin-left: 20.8px;
   margin-top: 38.52px;
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .noun .noun_h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .signup .group .noun .noun_p {
@@ -195,7 +278,29 @@ h6 {
   grid-row-gap: 16px;
 }
 
+@media screen and (max-width: 810px) {
+  .signup .group .noun .noun_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 42px 42px 43px 42px 42px 42px 43px 42px;
+        grid-template-rows: 42px 42px 43px 42px 42px 42px 43px 42px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .noun .noun_container {
+    margin: 20px 0 0 5px;
+  }
+}
+
 .signup .group .noun .noun_container .noun_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 12px;
@@ -284,6 +389,10 @@ h6 {
           transform: translate(-50%, -50%) scale(1);
 }
 
+.signup .group .noun .noun_container .no-flex {
+  display: block;
+}
+
 .signup .group .noun .noun_container .noun_input {
   width: 234px;
   height: 23px;
@@ -309,6 +418,19 @@ h6 {
   margin: 104px 0 0 0;
 }
 
+@media screen and (max-width: 530px) {
+  .signup .group .noun .account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px 0 0 0;
+  }
+}
+
 .signup .group .noun .account .account_p {
   font-family: "Work Sans", sans-serif;
   font-size: 13px;
@@ -316,6 +438,12 @@ h6 {
   font-weight: 200;
   color: #000000;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .noun .account .account_p {
+    margin: 0px;
+  }
 }
 
 .signup .group .noun .account .account_p .account_a {
@@ -337,5 +465,17 @@ h6 {
   border: 0.5px solid #ffffff;
   color: #ffffff;
   margin-right: 22px;
+}
+
+@media screen and (max-width: 810px) {
+  .signup .group .noun .account .account_button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .group .noun .account .account_button {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
