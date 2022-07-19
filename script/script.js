@@ -92,7 +92,7 @@ form.onsubmit = function valideForm() {
 
         } else {
             Password.style = 'border-bottom: 2px solid #FF2828 !important';
-            Confirm_Password.style = 'border: 2px dashed red !important';
+            Confirm_Password.style = 'border-bottom: 2px solid #FF2828 !important';
             count++;
 
         };

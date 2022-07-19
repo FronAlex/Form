@@ -487,6 +487,20 @@ h6 {
   z-index: 5;
 }
 
+@media screen and (max-width: 810px) {
+  .signup .approved {
+    top: 430px;
+    left: 160px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .signup .approved {
+    top: 450px;
+    left: 80px;
+  }
+}
+
 .signup .approved .approved_h4 {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;

@@ -390,6 +390,16 @@ h6 {
         top: 277px;
         left: 269px;
         z-index: 5;
+
+        @media screen and (max-width: 810px) {
+            top: 430px;
+            left: 160px;
+        }
+        @media screen and (max-width: 530px) {
+            top: 450px;
+            left: 80px;
+        }
+
         .approved_h4 {
             font-family: "Work Sans", sans-serif;
             font-weight: 500;
