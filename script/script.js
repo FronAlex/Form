@@ -77,6 +77,7 @@ form.onsubmit = function valideForm() {
     var Password = document.querySelector('.password');
     var Confirm_Password = document.querySelector('.Confirm_Password');
 
+
     if (Password.value.trim() == '' || Confirm_Password.value.trim() == '') {
         Password.style = 'border-bottom: 2px solid #FF2828 !important';
         Confirm_Password.style = 'border-bottom: 2px solid #FF2828 !important';
@@ -101,6 +102,17 @@ form.onsubmit = function valideForm() {
 
     if (count !== 0) {
 
+        let button = document.querySelector('.account_button');
+        button.classList.toggle('animate__animated');
+        button.classList.toggle('animate__wobble');
+
+        function remove() {
+            button.classList.remove('animate__animated');
+            button.classList.remove('animate__wobble');
+        }
+        setTimeout(remove, 1000)
+
+
         return false;
     };
 
@@ -117,12 +129,10 @@ form.onsubmit = function valideForm() {
 
     };
 
-    setTimeout(skritie, 1500);
+    setTimeout(skritie, 500);
 
-    let button = document.querySelector('.account_button');
-    button.classList.add('animate__animated');
-    button.classList.add('animate__wobble');
-    console.log('rrrrr')
+
+
 
     let clear = document.querySelectorAll('.clear');
 
