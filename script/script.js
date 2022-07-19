@@ -17,11 +17,11 @@ form.onsubmit = function valideForm() {
     for (let i of fields) {
         if (i.value.trim() == '') {
 
-            i.style = 'background-color: red !important;';
+            i.style = 'border-bottom: 2px solid #FF2828 !important';
             i.focus();
             count++;
         } else {
-            i.style = 'background-color: white !important;';
+            i.style = 'border-bottom: 1px solid #f2f2f2 !important';
         };
 
     };
@@ -31,7 +31,7 @@ form.onsubmit = function valideForm() {
 
     if (email.value.trim() == '') {
 
-        email.style = 'background-color: red !important;';
+        email.style = 'border-bottom: 2px solid #FF2828 !important';
         email.focus();
         count++;
 
@@ -40,11 +40,11 @@ form.onsubmit = function valideForm() {
         if (email.value.trim().indexOf('.', 0) == -1 || email.value.trim().indexOf('@', 0) == -1) {
 
             email.focus();
-            email.style = 'background-color: red !important;';
+            email.style = 'border-bottom: 2px solid #FF2828 !important';
             count++;
 
         } else {
-            email.style = 'background-color: white !important;';
+            email.style = 'border-bottom: 1px solid #f2f2f2 !important';
         };
     };
 
@@ -78,21 +78,21 @@ form.onsubmit = function valideForm() {
     var Confirm_Password = document.querySelector('.Confirm_Password');
 
     if (Password.value.trim() == '' || Confirm_Password.value.trim() == '') {
-        Password.style = 'background-color: red !important;';
-        Confirm_Password.style = 'background-color: red !important;';
+        Password.style = 'border-bottom: 2px solid #FF2828 !important';
+        Confirm_Password.style = 'border-bottom: 2px solid #FF2828 !important';
         count++;
 
     } else {
-        Password.style = 'background-color: white !important;';
-        Confirm_Password.style = 'background-color: white !important;';
+        Password.style = 'border-bottom: 1px solid #f2f2f2 !important';
+        Confirm_Password.style = 'border-bottom: 1px solid #f2f2f2 !important';
 
         if (Password.value === Confirm_Password.value) {
-            Password.style = 'background-color: white !important;';
-            Confirm_Password.style = 'background-color: white !important;';
+            Password.style = 'border-bottom: 1px solid #f2f2f2 !important';
+            Confirm_Password.style = 'border-bottom: 1px solid #f2f2f2 !important';
 
         } else {
-            Password.style = 'background-color: red !important;';
-            Confirm_Password.style = 'background-color: red !important;';
+            Password.style = 'border-bottom: 2px solid #FF2828 !important';
+            Confirm_Password.style = 'border: 2px dashed red !important';
             count++;
 
         };
@@ -104,6 +104,33 @@ form.onsubmit = function valideForm() {
         return false;
     };
 
+
+
+    function skritie() {
+
+        let p = document.querySelector('.account_p');
+        let approved = document.querySelector('.approved');
+
+        form.style = 'visibility: hidden; !important';
+        p.style = 'visibility: initial; !important';
+        approved.style = 'visibility: initial; !important';
+
+    };
+
+    setTimeout(skritie, 1500);
+
+    let button = document.querySelector('.account_button');
+    button.classList.add('animate__animated');
+    button.classList.add('animate__wobble');
+    console.log('rrrrr')
+
+    let clear = document.querySelectorAll('.clear');
+
+    for (let i of clear) {
+        i.value = '';
+    }
+    male.checked = false;
+    female.checked = false;
 
 };
 

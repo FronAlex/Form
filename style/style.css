@@ -478,4 +478,30 @@ h6 {
     margin-top: 30px;
   }
 }
+
+.signup .approved {
+  position: absolute;
+  visibility: hidden;
+  top: 277px;
+  left: 269px;
+  z-index: 5;
+}
+
+.signup .approved .approved_h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.46px;
+  color: #111111;
+  margin-bottom: 11px;
+}
+
+.signup .approved .approved_p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+}
 /*# sourceMappingURL=style.css.map */

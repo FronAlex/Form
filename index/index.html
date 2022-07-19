@@ -14,11 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@200;300;400;500&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
 
     <section class="signup">
+
+
+
 
         <div class="group">
             <div class="bitmap">
@@ -27,7 +32,12 @@
                 </div>
             </div>
 
+
+
+
             <form action="#" class="noun form" name="myForm" onsubmit="valideForm()" method="get">
+
+
                 <h3 class="noun_h3">New user? </h3>
                 <p class="noun_p">Use the form below to create your account.</p>
 
@@ -35,18 +45,18 @@
 
                     <label class="noun_label">
                         First Name
-                        <input type="text" class="noun_input field" name=" First_Name">
+                        <input type="text" class="noun_input field clear" name=" First_Name">
                     </label>
 
                     <label class="noun_label">
                         Last Name
-                        <input type="text" class="noun_input field" name=" Last_Name">
+                        <input type="text" class="noun_input field clear" name=" Last_Name">
                     </label>
 
                     <label class="noun_label">
                         Nationality
                         <select class="noun_input" name="Nationality_name">
-                            <option value="value1">American</option>
+                            <option value="value1" selected="selected">American</option>
                             <option value="value2">Russian</option>
                             <option value="value3">France</option>
                             <option value="value2">Germany</option>
@@ -56,13 +66,13 @@
 
                     <label class="noun_label">
                         E-mail
-                        <input type="email" class="noun_input email_name">
+                        <input type="email" class="noun_input email_name clear">
                     </label>
 
                     <div class="noun_label no-flex">
                         Date of Birth <br>
                         <select class="number" name="number_name">
-                            <option value="1">1</option>
+                            <option value="1" selected="selected">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -96,7 +106,7 @@
                         </select>
 
                         <select class="month" name="month_name">
-                            <option value="December">December</option>
+                            <option value="December" selected="selected">December</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>
@@ -153,12 +163,12 @@
 
                     <label class="noun_label">
                         Password
-                        <input type="password" class="noun_input  password">
+                        <input type="password" class="noun_input  password clear">
                     </label>
 
                     <label class="noun_label">
                         Confirm Password
-                        <input type="password" class="noun_input   Confirm_Password">
+                        <input type="password" class="noun_input   Confirm_Password clear">
                     </label>
 
                 </div>
@@ -170,11 +180,16 @@
                 </div>
 
 
+
+
             </form>
 
 
         </div>
-
+        <div class="approved">
+            <h4 class="approved_h4">Thank You!</h4>
+            <p class="approved_p">you registered!</p>
+        </div>
 
     </section>
 
